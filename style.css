@@ -1,0 +1,88 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#gameCanvas {
+    border: 2px solid #333;
+    margin: 10px 0;
+}
+
+.control-panel {
+    margin-top: 15px;
+}
+
+.speed-control {
+    margin: 10px 0;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin: 0 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 修改 .Score 类的样式，放大两个字号并加粗 */
+.Score {
+    font-size: 22px; /* 假设基础字号为 18px，放大两个字号为 22px */
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+#imageDisplay {
+    /* 设置图片最大宽度和高度，使其适应容器 */
+    max-width: 100%; 
+    max-height: 300px; 
+    /* 使图片水平居中 */
+    display: block; 
+    margin: 0 auto; 
+    /* 可根据需要添加其他样式，如边距等 */
+    margin-bottom: 10px; 
+}
+
+/* 新增样式，使时间显示居中 */
+#timeDisplay {
+    text-align: center;
+    font-size: 22px; /* 保持与 .Score 字体大小一致 */
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* 新增音量调节滑块样式 */
+#volumeControl {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: rotate(-90deg);
+    width: 150px;
+}
